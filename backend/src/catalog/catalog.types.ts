@@ -2,7 +2,7 @@ export interface Test{
     id : string;
     code : string;
     name : string;
-    price : number;
+    price : number | null;
     status : boolean;
 }
 export interface Package{

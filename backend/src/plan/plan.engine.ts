@@ -10,7 +10,7 @@ export interface Candidate {
   includes: string[];
 }
 
-export function buildCandidate(
+export function buildCandidates(
   selected: string[],
   tests: Test[],
   packages: Package[],
@@ -49,7 +49,7 @@ export function buildCandidate(
 }
 
 export function findCheapestPlan(
-  selected: [],
+  selected: string[],
   candidates: Candidate[],
 ): SolvedPlan | null {
   let best: SolvedPlan | null = null;
