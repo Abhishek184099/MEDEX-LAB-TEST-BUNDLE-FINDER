@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { buildCandidates , findCheapestPlan } from '../src/plan/plan.engine';
-import { Package ,Test } from '../src/catalog/catalog.types';
+import { buildCandidates , findCheapestPlan } from '../src/plan/plan.engine.js';
+import { Package ,Test } from '../src/catalog/catalog.types.js';
 
 const test = (id: string, price: number | null): Test => ({
   id,
